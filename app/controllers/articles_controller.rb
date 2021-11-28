@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
   def show; end
 
   def index
+    byebug
     @articles = Article.paginate(page: params[:page], per_page: 5)
   end
 
